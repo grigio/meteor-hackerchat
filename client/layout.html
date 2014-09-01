@@ -1,0 +1,30 @@
+<!-- client/layout.html -->
+<template name="layout">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HackerChat</title>
+  </head>
+
+  <body style="background-color:#C2C2C2">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ pathFor 'home' }}">HackerChat</a>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 60px;
+padding-bottom: 40px;
+padding-left: 1px;
+padding-right: 1px;
+background-color: rgb(87, 87, 87);">
+
+      {{> yield }}
+
+    </div><!-- /.container -->
+
+  </body>
+
+</template>

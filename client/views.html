@@ -1,0 +1,29 @@
+<template name="home">
+    <p>Welcome to home, go to the <a href="{{ pathFor 'chat' channel_id='global' }}">global channel</a>.</p>
+</template>
+
+<template name="chat">
+    <div class="list-group">
+        {{#each messages}}
+          <div class="list-group-item" id="{{_id}}">
+            <p class="list-group-item-text">({{formatTime ts}}): {{text}}</p>
+            <strong>{{username}}</strong>
+          </div>
+        {{ else }}
+          <p>
+            There are no messages in this chat :( Do you what to be the first?
+          </p>
+        {{/each}}
+    </div>
+
+    {{> chatEntry}}
+</template>
+
+<template name="chatEntry">
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <input class="jsUser form-control" type="text" placeholder="User"
+            style="width:25%; float:left;"/>
+        <input class="jsText form-control" type="text" placeholder="Text"
+            style="width:75%;"/>
+    </div>
+</template>
