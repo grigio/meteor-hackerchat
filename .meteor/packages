@@ -4,5 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-bootstrap-3
-iron-router
+iron:router
+mizzao:bootstrap-3
+

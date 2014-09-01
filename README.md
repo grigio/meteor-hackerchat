@@ -1,15 +1,12 @@
-Meteor Hackerchat
+## Meteor Hackerchat
 
-Steps
+A simple chat based on Meteor 0.9.x to show off Meteor features in the real world.
 
-0. (System) Install meteor and meteorite (mrt)
-    
-    `curl https://install.meteor.com/ | sh`
-    `sudo npm install -g meteorite`
+### Logs
 
-1. (Application)
+Steps to recreate the environment
 
-    `mrt install iron-router`
-    `mrt install bootstrap-3`
-
-2. meteor remove autopublish insecure
+```
+meteor remove autopublish insecure
+meteor add iron:router mizzao:bootstrap-3
+```
