@@ -6,4 +6,5 @@
 standard-app-packages
 iron:router
 mizzao:bootstrap-3
+reactive-dict
 
