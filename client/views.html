@@ -6,6 +6,7 @@
     <div class="list-group">
         {{#each messages}}
           <div class="list-group-item" id="{{_id}}">
+            <span class="jsRemove" style="float:right;">✕</span>
             <p class="list-group-item-text">({{formatTime ts}}): {{text}}</p>
             <strong>{{username}}</strong>
           </div>

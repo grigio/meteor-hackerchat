@@ -5,7 +5,13 @@ Template.chat.helpers({
         return Messages.find({},{sort:{ts:1}});
     },
     formatTime: function (date) {
-        return date.toLocaleTimeString();
+        return date ? date.toLocaleTimeString() : new Date();
+    }
+});
+
+Template.chat.events({
+    'click .jsRemove': function () {
+        Messages.remove({_id:this._id});
     }
 });
 
