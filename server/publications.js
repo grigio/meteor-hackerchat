@@ -11,5 +11,7 @@ Messages.allow({
     return true;
   },
   update: function (userId, doc, fields, modifier) {},
-  remove: function (userId, doc) {}
+  remove: function (userId, doc) {
+    return true;
+  }
 });
